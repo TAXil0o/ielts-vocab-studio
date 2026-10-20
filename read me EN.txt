@@ -18,6 +18,7 @@ The site contains two connected study layers:
 
 - Daily 100-word study dashboard with a progress ring and session checklist
 - Flip cards with a fixed British-English voice
+- Chinese and English definitions for every entry, shown in cards, tables, and the word bank
 - Completion status, mastery level, and personal notes
 - Word filtering by learning day, tier, theme, pack, and status
 - Three-day review cycle: listening recognition, spelling, and written output
