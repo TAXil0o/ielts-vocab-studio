@@ -23,7 +23,9 @@ The site contains two connected study layers:
 - Three-day review cycle: listening recognition, spelling, and written output
 - Four contextual reading passages with highlighted target words and cloze tests
 - Selectable themed word packs with automatic duplicate removal
-- Custom word-card sessions made from selected packs
+- Selected words automatically split into 100-word training days
+- A home and sidebar plan switcher for the Round 1 plan and the custom plan
+- Separate progress records for the Round 1 and custom plans
 - Progress stored locally in the browser
 - JSON progress backup and restore
 - CSV vocabulary export
