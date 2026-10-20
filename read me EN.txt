@@ -1,0 +1,94 @@
+LEX 07.5 / IELTS VOCABULARY STUDIO
+English Project Guide
+
+1. OVERVIEW
+
+LEX 07.5 is a browser-based IELTS vocabulary learning site built around a simple
+weekly routine: study 100 lexical items a day for four days, then use the next
+three days for spaced review. A learner completes one themed word pack before
+moving on to another.
+
+The site contains two connected study layers:
+
+1. The Round 1 plan: 400 daily-life words organized across four learning days.
+2. The IELTS Word Bank: approximately 4,810 IELTS-tagged entries that can be
+   filtered by theme and added to a personal study plan.
+
+2. FEATURES
+
+- Daily 100-word study dashboard with a progress ring and session checklist
+- Flip cards with a fixed British-English voice
+- Completion status, mastery level, and personal notes
+- Word filtering by learning day, tier, theme, pack, and status
+- Three-day review cycle: listening recognition, spelling, and written output
+- Four contextual reading passages with highlighted target words and cloze tests
+- Selectable themed word packs with automatic duplicate removal
+- Custom word-card sessions made from selected packs
+- Progress stored locally in the browser
+- JSON progress backup and restore
+- CSV vocabulary export
+- Responsive desktop and mobile layouts
+
+3. WORD BANK CATEGORIES
+
+- High-frequency core
+- Daily life
+- Social interaction
+- Work and career
+- Education and learning
+- Health and medicine
+- Travel and transport
+- City and environment
+- Technology and media
+- Consumer economy
+- Social issues
+- Academic language
+- General vocabulary
+
+Each entry receives a primary theme based on its Chinese meaning, English
+definition, and topic keywords. A word may relate to more than one theme, but
+it is placed in the best-matching pack for planning. The full bank remains
+searchable.
+
+4. FIXED PRONUNCIATION
+
+The Round 1 plan and the IELTS Word Bank use MP3 files hosted with the website.
+The fixed voice is:
+
+en-GB-RyanNeural
+
+This means desktop browsers, phones, and other visitors hear the same British
+English pronunciation instead of the different system voices installed on each
+device. Browser speech synthesis is used only as a fallback when an audio file
+cannot be loaded.
+
+5. DATA SOURCE AND LICENSE
+
+The IELTS Word Bank is based on the public ECDICT dataset:
+
+Project: https://github.com/skywind3000/ECDICT
+License: MIT License
+
+ECDICT provides the English headwords, phonetic transcriptions, Chinese
+definitions, parts of speech, and IELTS tags. The Round 1 word list, theme
+classification, learning workflow, passages, audio packaging, and interface
+were prepared specifically for this project.
+
+6. PRIVACY AND LOCAL STORAGE
+
+- There is no account or server-side learner database.
+- Completion status, mastery levels, and review scores stay in the visitor's
+  own browser localStorage.
+- Clearing browser site data removes the progress stored on that device.
+- Visitors should export a JSON progress backup regularly.
+- Sharing the website URL does not share anyone's learning progress.
+
+7. RUNNING LOCALLY
+
+Open index.html in a modern browser. Keep the entire project folder together;
+moving index.html by itself will break the local scripts, data, and audio.
+
+8. DEPLOYMENT
+
+The site is a static application and can be hosted on GitHub Pages, Cloudflare
+Pages, Netlify, or Vercel. The current public deployment uses GitHub Pages.
