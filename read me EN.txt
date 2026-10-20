@@ -19,6 +19,9 @@ The site contains two connected study layers:
 - Daily 100-word study dashboard with a progress ring and session checklist
 - Flip cards with a fixed British-English voice
 - Chinese and English definitions for every entry, shown in cards, tables, and the word bank
+- A paraphrase and synonym memory section with question wording, passage wording,
+  English definitions, original sentences, and rewritten sentences
+- Independent mastery and review status for each synonym family
 - Completion status, mastery level, and personal notes
 - Word filtering by learning day, tier, theme, pack, and status
 - Three-day review cycle: listening recognition, spelling, and written output
@@ -76,6 +79,14 @@ ECDICT provides the English headwords, phonetic transcriptions, Chinese
 definitions, parts of speech, and IELTS tags. The Round 1 word list, theme
 classification, learning workflow, passages, audio packaging, and interface
 were prepared specifically for this project.
+
+The synonym families use Open English WordNet 2025:
+
+Project: https://github.com/globalwordnet/english-wordnet
+License: CC BY 4.0, with the underlying Princeton WordNet license notices.
+
+Exam-oriented paraphrase families and example sentences were prepared for this
+project.
 
 6. PRIVACY AND LOCAL STORAGE
 
