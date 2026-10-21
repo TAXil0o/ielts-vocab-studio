@@ -26,6 +26,9 @@ The site contains two connected study layers:
 - Word filtering by learning day, tier, theme, pack, and status
 - Three-day review cycle: listening recognition, spelling, and written output
 - Four contextual reading passages with highlighted target words and cloze tests
+- A speaking studio with four 25–30 second micro-dialogues and connected-speech coaching
+- Microphone recording, instant replay, browser word-gap checks, and local attempt history
+- One-click transfer of missed speaking words into the existing three-day vocabulary review
 - Selectable themed word packs with automatic duplicate removal
 - Selected words automatically split into 100-word training days
 - A home and sidebar plan switcher for the Round 1 plan and the custom plan
@@ -93,16 +96,41 @@ project.
 - There is no account or server-side learner database.
 - Completion status, mastery levels, and review scores stay in the visitor's
   own browser localStorage.
+- Speaking audio is not written to localStorage and is not uploaded to this
+  website's own server.
+- Browser speech recognition may process audio through the browser or platform
+  provider. An optional phoneme analyzer receives audio only when configured.
+- Speaking duration, transcript and score summaries are stored with local progress.
 - Clearing browser site data removes the progress stored on that device.
 - Visitors should export a JSON progress backup regularly.
 - Sharing the website URL does not share anyone's learning progress.
 
 7. RUNNING LOCALLY
 
-Open index.html in a modern browser. Keep the entire project folder together;
-moving index.html by itself will break the local scripts, data, and audio.
+Open index.html in a modern browser for the regular vocabulary workflow. Keep
+the entire project folder together; moving index.html by itself will break the
+local scripts, data, and audio.
+
+Microphone recording requires a secure browser context. For local speaking
+practice, run `python -m http.server 8080` inside the project folder and visit
+http://localhost:8080. HTTPS static hosting also works.
 
 8. DEPLOYMENT
 
 The site is a static application and can be hosted on GitHub Pages, Cloudflare
 Pages, Netlify, or Vercel. The current public deployment uses GitHub Pages.
+
+9. OPTIONAL PHONEME ASSESSMENT
+
+The default speaking feedback uses browser speech recognition to identify missing
+words and is not presented as phoneme-level scoring. To add phoneme-level
+feedback, run an OpenPronounce-compatible POST /pronunciation endpoint and set
+its URL in speaking-config.js:
+
+window.SPEAKING_LAB = {
+  analyzerEndpoint: "http://localhost:8000/pronunciation"
+};
+
+The endpoint must allow CORS from the website origin. If it is unavailable, the
+site falls back to recording, replay and word-gap feedback without blocking the
+speaking workflow.
