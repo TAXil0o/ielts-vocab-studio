@@ -42,6 +42,10 @@ The site contains two connected study layers:
 - JSON progress backup and restore
 - CSV vocabulary export
 - Responsive desktop and mobile layouts
+- Mobile navigation includes an explicit close button and a dismissible backdrop
+- Leaving a module stops active audio or microphone recording
+- Dialogs stay within the mobile viewport with a sticky close control
+- Mobile form controls use a 16px base size to avoid unwanted iOS page zoom
 
 3. WORD BANK CATEGORIES
 
@@ -119,6 +123,13 @@ local scripts, data, and audio.
 Microphone recording requires a secure browser context. For local speaking
 practice, run `python -m http.server 8080` inside the project folder and visit
 http://localhost:8080. HTTPS static hosting also works.
+
+Mobile notes:
+
+- Use a current Safari, Chrome or Edge release and check that silent mode is off.
+- If speech does not start, tap a playback control once and review browser media permissions.
+- iOS may not provide web speech recognition, but recording, replay and local history still work.
+- Moving away from the speaking module stops an active recording and preserves its analysis.
 
 8. DEPLOYMENT
 
