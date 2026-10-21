@@ -17,6 +17,8 @@ The site contains two connected study layers:
 2. FEATURES
 
 - Daily 100-word study dashboard with a progress ring and session checklist
+- A unified learning map covering vocabulary, paraphrase, reading and speaking progress
+- Session steps open the relevant module while completion remains independently tracked
 - Flip cards with a fixed British-English voice
 - Chinese and English definitions for every entry, shown in cards, tables, and the word bank
 - A paraphrase and synonym memory section with question wording, passage wording,
@@ -25,7 +27,10 @@ The site contains two connected study layers:
 - Completion status, mastery level, and personal notes
 - Word filtering by learning day, tier, theme, pack, and status
 - Three-day review cycle: listening recognition, spelling, and written output
+- Vocabulary scheduling assigns a next due date and prioritizes weak or overdue words
+- Listening recognition hides the English answer until after the learner responds
 - Four contextual reading passages with highlighted target words and cloze tests
+- Reading passages can be marked complete and contribute to the learning map
 - A speaking studio with four 25–30 second micro-dialogues and connected-speech coaching
 - Microphone recording, instant replay, browser word-gap checks, and local attempt history
 - One-click transfer of missed speaking words into the existing three-day vocabulary review
