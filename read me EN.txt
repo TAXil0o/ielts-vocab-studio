@@ -18,6 +18,9 @@ The site contains two connected study layers:
 
 - Daily 100-word study dashboard with a progress ring and session checklist
 - A daily mission dashboard ordered by the current IELTS preparation stage
+- A separate open-resource library for official free links, CC BY textbooks,
+  public-domain texts and audio, open data, and sentence corpora, with licence
+  filters, favourites, and JSON catalogue import/export
 - A unified activity timeline for vocabulary review, listening, speaking and reading
 - Automatic stage, week and next-checkpoint display from the dated study plan
 - Flip cards with a fixed British-English voice
@@ -44,9 +47,9 @@ The site contains two connected study layers:
   segment playback, slow replay, looping, word-level dictation diffs, A–D error
   tagging, 48-hour retest scheduling, and local listening history
 - A speaking studio with four 25–30 second micro-dialogues and connected-speech coaching
-- A complete speaking mock with Part 1 questions, a one-minute Part 2 preparation
-  timer, a two-minute talk, Part 3 discussion questions, section recordings, and
-  one selected improvement focus for the next attempt
+- Three switchable complete speaking mocks with Part 1 questions, a one-minute
+  Part 2 preparation timer, a two-minute talk, Part 3 discussion questions,
+  section recordings, and one selected improvement focus for the next attempt
 - Microphone recording, instant replay, browser word-gap checks, and local attempt history
 - One-click transfer of missed speaking words into the existing three-day vocabulary review
 - Selectable themed word packs with automatic duplicate removal
