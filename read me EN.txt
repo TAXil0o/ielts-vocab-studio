@@ -18,6 +18,17 @@ The site contains two connected study layers:
 
 - Daily 100-word study dashboard with a progress ring and session checklist
 - A daily mission dashboard ordered by the current IELTS preparation stage
+- An Anime.js motion layer for view entrances, counting metrics, staggered resource
+  cards and chart drawing
+- AutoAnimate transitions for task, history, resource, question and review lists
+- Morphdom local DOM patching to reduce full-container redraws and preserve focus
+- Web Vitals monitoring for LCP, INP, CLS, FCP and TTFB
+- Lazy loading for the large word-bank and synonym datasets; the home screen no
+  longer downloads roughly 2.3 MB of unused JSON/JS before first interaction
+- A settings screen with Full, Reduced and Off motion levels, plus a one-click
+  option to follow the operating-system preference again
+- Full mode adds button ripples, pointer-follow card glows, animated ambient
+  shapes and a smoothly animated daily progress ring
 - A separate open-resource library for official free links, CC BY textbooks,
   public-domain texts and audio, open data, and sentence corpora, with licence
   filters, favourites, and JSON catalogue import/export
@@ -60,6 +71,10 @@ The site contains two connected study layers:
 - JSON progress backup and restore
 - CSV vocabulary export
 - Responsive desktop and mobile layouts
+
+Animation follows `prefers-reduced-motion` by default and can be adjusted from
+Settings. All third-party frontend libraries are vendored locally with their
+licenses under `vendor/`.
 
 The listening laboratory is bring-your-own-material. It includes only an
 original demo transcript, not commercial exam audio or subtitles. Imported audio
