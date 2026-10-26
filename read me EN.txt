@@ -3,10 +3,10 @@ English Project Guide
 
 1. OVERVIEW
 
-LEX 07.5 is a browser-based IELTS vocabulary learning site built around a simple
-weekly routine: study 100 lexical items a day for four days, then use the next
-three days for spaced review. A learner completes one themed word pack before
-moving on to another.
+LEX 07.5 is a browser-based IELTS learning workspace built around a simple
+weekly vocabulary routine: study 100 lexical items a day for four days, then use
+the next three days for spaced review. It also unifies listening, speaking,
+reading and review activity in a daily mission dashboard.
 
 The site contains two connected study layers:
 
@@ -17,8 +17,9 @@ The site contains two connected study layers:
 2. FEATURES
 
 - Daily 100-word study dashboard with a progress ring and session checklist
-- A unified learning map covering vocabulary, paraphrase, reading and speaking progress
-- Session steps open the relevant module while completion remains independently tracked
+- A daily mission dashboard ordered by the current IELTS preparation stage
+- A unified activity timeline for vocabulary review, listening, speaking and reading
+- Automatic stage, week and next-checkpoint display from the dated study plan
 - Flip cards with a fixed British-English voice
 - Chinese and English definitions for every entry, shown in cards, tables, and the word bank
 - A paraphrase and synonym memory section with question wording, passage wording,
@@ -27,25 +28,44 @@ The site contains two connected study layers:
 - Completion status, mastery level, and personal notes
 - Word filtering by learning day, tier, theme, pack, and status
 - Three-day review cycle: listening recognition, spelling, and written output
-- Vocabulary scheduling assigns a next due date and prioritizes weak or overdue words
-- Listening recognition hides the English answer until after the learner responds
+- A timed reading laboratory with 13 questions, evidence notes, automatic scoring,
+  three error categories, a paraphrase table, and saved review metadata
+- A writing laboratory with six Academic Task 1 chart types, Task 2 opinion prompts,
+  20/40-minute timers, word counts, outlines, four-criterion self-review, issue tags,
+  three prioritised edits, and side-by-side revision tracking
+- A full mock and progress centre with computer/paper modes, Listening 30 + Reading 60
+  + Writing 60 + Speaking 15 minutes, four skill scores, overall practice Band,
+  mock history, and the six plan checkpoints
+- Weekly training-time trends across speaking, listening, reading, writing and vocabulary
+- A sprint mode that reduces the home dashboard to speaking, listening retests,
+  due vocabulary and writing review
 - Four contextual reading passages with highlighted target words and cloze tests
-- Reading passages can be marked complete and contribute to the learning map
+- A listening laboratory that imports local audio plus SRT/VTT/TXT, supports
+  segment playback, slow replay, looping, word-level dictation diffs, A–D error
+  tagging, 48-hour retest scheduling, and local listening history
 - A speaking studio with four 25–30 second micro-dialogues and connected-speech coaching
+- A complete speaking mock with Part 1 questions, a one-minute Part 2 preparation
+  timer, a two-minute talk, Part 3 discussion questions, section recordings, and
+  one selected improvement focus for the next attempt
 - Microphone recording, instant replay, browser word-gap checks, and local attempt history
 - One-click transfer of missed speaking words into the existing three-day vocabulary review
 - Selectable themed word packs with automatic duplicate removal
 - Selected words automatically split into 100-word training days
 - A home and sidebar plan switcher for the Round 1 plan and the custom plan
 - Separate progress records for the Round 1 and custom plans
-- Progress stored locally in the browser
+- Legacy module state remains compatible with localStorage; unified activity is stored in IndexedDB
 - JSON progress backup and restore
 - CSV vocabulary export
 - Responsive desktop and mobile layouts
-- Mobile navigation includes an explicit close button and a dismissible backdrop
-- Leaving a module stops active audio or microphone recording
-- Dialogs stay within the mobile viewport with a sticky close control
-- Mobile form controls use a 16px base size to avoid unwanted iOS page zoom
+
+The listening laboratory is bring-your-own-material. It includes only an
+original demo transcript, not commercial exam audio or subtitles. Imported audio
+is read inside the current browser tab and is not uploaded; it must be selected
+again after a refresh. Dictation results, error tags, and retest dates remain on
+the local device.
+
+Existing listening, speaking and vocabulary-review records are migrated into the
+unified activity store on the first upgrade.
 
 3. WORD BANK CATEGORIES
 
@@ -123,13 +143,6 @@ local scripts, data, and audio.
 Microphone recording requires a secure browser context. For local speaking
 practice, run `python -m http.server 8080` inside the project folder and visit
 http://localhost:8080. HTTPS static hosting also works.
-
-Mobile notes:
-
-- Use a current Safari, Chrome or Edge release and check that silent mode is off.
-- If speech does not start, tap a playback control once and review browser media permissions.
-- iOS may not provide web speech recognition, but recording, replay and local history still work.
-- Moving away from the speaking module stops an active recording and preserves its analysis.
 
 8. DEPLOYMENT
 
